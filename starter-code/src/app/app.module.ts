@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { CinemaService } from './cinema.service';
 import { MyHomeComponent } from './my-home/my-home.component';
 import { MyMovieComponent } from './my-movie/my-movie.component';
 import { routes } from './app.routes';
@@ -21,7 +22,9 @@ import { routes } from './app.routes';
     RouterModule.forRoot(routes),
     HttpModule
   ],
-  providers: [],
+  providers: [
+    CinemaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

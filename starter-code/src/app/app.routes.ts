@@ -8,7 +8,7 @@ export const routes: Routes = [
     component: MyHomeComponent
   },
   {
-    path: 'movie/:id',
+    path: 'movie/:movieId',
     component: MyMovieComponent
   },
   {
@@ -16,4 +16,4 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   }
-]
+];

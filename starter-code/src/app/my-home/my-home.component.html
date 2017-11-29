@@ -1,3 +1,4 @@
-<p>
-  my-home works!
-</p>
+<a routerLink="/movie/{{movie.id}}" class="card" *ngFor="let movie of movies">
+  <h2>{{movie.title}}</h2>
+  <img src="{{movie.poster}}">
+</a>
